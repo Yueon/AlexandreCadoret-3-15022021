@@ -182,7 +182,7 @@ nav {
 }
 
 .restaurant_texte {
-  width: 60%;
+  width: 70%;
   margin-left: 5%;
 }
 .restaurant_texte h1 {
@@ -195,7 +195,7 @@ nav {
 }
 
 .restaurant_icone {
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -236,6 +236,85 @@ li img {
   margin-left: 0;
   margin-right: 1%;
   margin-top: 3%;
+}
+
+@media all and (min-width: 1000px) {
+  #logo img {
+    width: 25%;
+  }
+
+  #location p {
+    font-size: 25px;
+  }
+
+  #presentation {
+    height: 415px;
+  }
+  #presentation h1 {
+    font-size: 30px;
+  }
+  #presentation p {
+    font-size: 30px;
+  }
+
+  #button {
+    width: 25%;
+    height: 60px;
+    border-radius: 25px;
+  }
+
+  #fonctionnement h1 {
+    margin-left: 20%;
+    margin-top: 3%;
+  }
+
+  #fonctionnement ul {
+    margin-left: 16%;
+    width: 100%;
+    display: flex;
+  }
+  #fonctionnement ul li {
+    width: 18%;
+    margin-left: 4%;
+    margin-top: 2%;
+  }
+
+  .fonctionnement_texte {
+    padding: 10px 20px 10px 10%;
+    font-size: 125%;
+  }
+
+  .restaurant_titre h1 {
+    margin-left: 20%;
+    margin-bottom: 3%;
+  }
+
+  .restaurant_rangee {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .restaurant {
+    width: 30%;
+  }
+
+  #footer {
+    height: 380px;
+  }
+
+  #footer #logo_footer {
+    width: 200px;
+    margin-left: 20%;
+  }
+
+  #contact {
+    margin-left: 20%;
+  }
+
+  li img {
+    margin-top: 1%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
