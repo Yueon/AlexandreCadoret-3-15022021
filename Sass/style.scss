@@ -1,6 +1,31 @@
+@font-face {
+    font-family: 'robotomedium';
+    src: url('roboto-medium-webfont.woff2') format('woff2'),
+         url('roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'shrikhandregular';
+    src: url('shrikhand-regular-webfont.woff2') format('woff2'),
+         url('shrikhand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$roboto: 'robotomedium';
+$shrikhand: 'shrikhandregular';
 
 body{
     margin: 0;
+    h1{
+        font-family: $shrikhand;
+    }
+    p{
+        font-family: $roboto;
+    }
 }
 
 #logo {
@@ -48,6 +73,7 @@ nav {
     flex-direction: column;
     align-items: center;
     height: 300px;
+    text-align: center;
 
     h1{
         font-size: 25px;
@@ -69,7 +95,7 @@ nav {
     box-shadow: 0px 2px 10px 0px gray;
     border: 2px;
     font-size: 100%;
-    margin-top: 14%;
+    margin-top: 5%;
 }
 
 #fonctionnement{
@@ -151,6 +177,21 @@ nav {
         width: 100%;
         border-radius: 25px 25px 0px 0px;
     } 
+}
+.img_restaurant{
+    position: relative;
+}
+.img_description{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    p{
+        background-color: #99E2D0;
+        border: 10px solid #99E2D0;
+        font-weight: bold;
+        color: #008E6B;
+        border-radius: 5px;
+    }
 }
 
 .restaurant_description{
