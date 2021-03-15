@@ -191,11 +191,11 @@ nav {
 }
 .restaurant_texte h1 {
   margin-bottom: 0px;
-  font-size: 25px;
+  font-size: 22px;
 }
 .restaurant_texte p {
   margin-top: 0px;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .restaurant_icone {
@@ -233,6 +233,7 @@ nav {
 }
 .puce p {
   margin-bottom: 0px;
+  margin-top: 2%;
 }
 
 li img {
