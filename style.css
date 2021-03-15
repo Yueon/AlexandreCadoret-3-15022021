@@ -79,7 +79,7 @@ nav {
 
 #button {
   color: white;
-  background-color: #FF79DA;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   width: 70%;
   height: 50px;
   border-radius: 25px;
@@ -87,6 +87,7 @@ nav {
   border: 2px;
   font-size: 100%;
   margin-top: 5%;
+  cursor: pointer;
 }
 
 #fonctionnement h1 {
@@ -105,6 +106,7 @@ nav {
   display: flex;
   border-radius: 12px;
   height: 60px;
+  cursor: pointer;
 }
 
 .fonctionnement_num {
@@ -162,6 +164,7 @@ nav {
   height: 230px;
   width: 100%;
   border-radius: 25px 25px 0px 0px;
+  object-fit: cover;
 }
 
 .img_restaurant {
@@ -234,6 +237,7 @@ nav {
 .puce p {
   margin-bottom: 0px;
   margin-top: 2%;
+  cursor: pointer;
 }
 
 li img {
@@ -299,9 +303,9 @@ li img {
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .restaurant {
+  .restaurant_rangee a {
     width: 30%;
+    margin-left: 4%;
   }
 
   #footer {
@@ -315,6 +319,10 @@ li img {
 
   #contact {
     margin-left: 20%;
+  }
+
+  .puce p {
+    margin-top: 1%;
   }
 
   li img {

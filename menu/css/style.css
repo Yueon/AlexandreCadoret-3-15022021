@@ -31,6 +31,7 @@ body p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 #logo #fleche img {
   width: 25%;
@@ -38,10 +39,13 @@ body p {
 #logo #logo_img img {
   width: 55%;
   margin-left: 10%;
+  cursor: pointer;
 }
 
 #image_restaurant img {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 main {
@@ -57,16 +61,16 @@ main {
 }
 
 #en_tete_texte {
-  width: 70%;
+  width: 85%;
   margin-top: 4%;
 }
 #en_tete_texte h1 {
-  margin-left: 10%;
+  margin-left: 6%;
   font-size: 30px;
 }
 
 #en_tete_icone {
-  width: 30%;
+  width: 15%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -76,6 +80,7 @@ main {
 #en_tete_icone img {
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 
 .menu_titre h2 {
@@ -96,10 +101,11 @@ main {
   border-radius: 25px;
   width: 95%;
   margin-bottom: 5%;
+  cursor: pointer;
 }
 
 .plat_description {
-  width: 80%;
+  width: 85%;
   margin-left: 5%;
 }
 .plat_description h3 {
@@ -114,14 +120,14 @@ main {
 }
 
 .plat_prix {
-  width: 20%;
+  width: 15%;
   display: flex;
   justify-content: flex-end;
   align-items: end;
   margin-right: 10%;
 }
 .plat_prix p {
-  margin-bottom: 10%;
+  margin-bottom: 25%;
   font-size: 15px;
 }
 
@@ -135,7 +141,7 @@ main {
 
 #button {
   color: white;
-  background-color: #FF79DA;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   width: 50%;
   height: 50px;
   border-radius: 25px;
@@ -143,6 +149,7 @@ main {
   border: 2px;
   font-size: 100%;
   margin-top: 5%;
+  cursor: pointer;
 }
 
 #footer {
@@ -169,6 +176,7 @@ main {
 .puce p {
   margin-bottom: 0px;
   margin-top: 2%;
+  cursor: pointer;
 }
 
 li img {
@@ -179,6 +187,66 @@ li img {
 }
 
 @media all and (min-width: 1000px) {
+  #bloc_page {
+    width: 70%;
+    margin: auto;
+  }
+
+  #fleche {
+    width: 25%;
+  }
+  #fleche img {
+    width: 15%;
+  }
+
+  #logo {
+    width: 75%;
+  }
+  #logo img {
+    width: 45%;
+  }
+
+  #image_restaurant img {
+    height: 500px;
+  }
+
+  #en_tete_texte h1 {
+    font-size: 60px;
+  }
+
+  .menu_titre h2 {
+    font-size: 30px;
+  }
+
+  .menu {
+    flex-direction: row;
+  }
+
+  .plat {
+    width: 28%;
+    margin-left: 3%;
+    height: 125px;
+  }
+
+  .plat_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .plat_description h3 {
+    font-size: 23px;
+  }
+
+  .plat_prix {
+    align-items: center;
+  }
+
+  #button {
+    width: 20%;
+    height: 60px;
+    margin-top: 2%;
+  }
+
   #footer {
     height: 380px;
   }
@@ -190,6 +258,10 @@ li img {
 
   #contact {
     margin-left: 20%;
+  }
+
+  .puce p {
+    margin-top: 1%;
   }
 
   li img {
