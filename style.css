@@ -40,6 +40,7 @@ body a {
   background-color: #bdb9b9;
   margin-top: 2%;
   justify-content: center;
+  box-shadow: inset 0px 1px 5px 0px gray;
 }
 #location #map {
   display: flex;
