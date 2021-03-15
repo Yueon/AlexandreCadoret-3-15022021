@@ -26,6 +26,10 @@ body{
     p{
         font-family: $roboto;
     }
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
 
 #logo {

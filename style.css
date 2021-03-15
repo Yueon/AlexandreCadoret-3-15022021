@@ -19,6 +19,10 @@ body h1 {
 body p {
   font-family: "robotomedium";
 }
+body a {
+  text-decoration: none;
+  color: black;
+}
 
 #logo {
   display: flex;
