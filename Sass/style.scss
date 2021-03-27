@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'robotomedium';
-    src: url('roboto-medium-webfont.woff2') format('woff2'),
-         url('roboto-medium-webfont.woff') format('woff');
+    font-family: 'robotolight';
+    src: url('/roboto-light-webfont.woff2') format('woff2'),
+         url('/roboto-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -15,11 +15,19 @@
     font-style: normal;
 
 }
-$roboto: 'robotomedium';
+$roboto: 'robotolight';
 $shrikhand: 'shrikhandregular';
 $couleur_primaire: #9356DC;
 $couleur_secondaire: #FF79DA;
 $couleur_tertiaire: #99E2D0;
+
+@mixin grossissement {
+    transform: scale(1);
+    transition: all 0.3s cubic-bezier(1, 0, 0, 1);
+    &:hover {
+        transform: scale(1.05);
+    }
+}
 
 body{
     margin: 0;
@@ -156,7 +164,7 @@ nav {
 }
 
 .fonctionnement_texte{
-    padding: 10px 20px 10px 55px;
+    padding: 10px 20px 10px 35px;
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -180,7 +188,8 @@ nav {
     box-shadow: 0px 10px 10px lightgray;
     border-radius: 25px;
     margin-left: 5%;
-    margin-bottom: 5%; 
+    margin-bottom: 5%;
+    @include grossissement;
 
     img{
         height: 230px;
@@ -275,6 +284,13 @@ li img{
 }
 
 @media all and (min-width: 1000px) {
+    
+    #fleche{
+        width: 25%;
+        img{
+            width: 15%;
+        }
+    }
 
       #logo img {
         width: 25%;

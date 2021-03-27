@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'robotomedium';
-    src: url('/roboto-medium-webfont.woff2') format('woff2'),
-         url('/roboto-medium-webfont.woff') format('woff');
+    font-family: 'robotolight';
+    src: url('/roboto-light-webfont.woff2') format('woff2'),
+         url('/roboto-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -15,19 +15,36 @@
     font-style: normal;
 
 }
-$roboto: 'robotomedium';
+$roboto: 'robotolight';
 $shrikhand: 'shrikhandregular';
 $couleur_primaire: #9356DC;
 $couleur_secondaire: #FF79DA;
 $couleur_tertiaire: #99E2D0;
 
+@mixin grossissement {
+    transform: scale(1);
+    transition: transform 400ms;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+@mixin validation {
+    transform: translateX(0px);
+    transition: transform 400ms;
+    &:hover .plat_animation {
+        transform: translateX(-90px);
+    }
+}
+
 body{
     margin: 0;
     h1{
-        font-family: $shrikhand;
+        font-family: $roboto;
     }
     p{
         font-family: $roboto;
+        white-space: nowrap;
     }
 }
 
@@ -41,19 +58,22 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         cursor: pointer;
 
         img{
-            width: 25%;
+            width: 50%;
         }
     }
 
     #logo_img{
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
         img{
             width: 55%;
-            margin-left: 10%;
+            margin-left: 12%;
             cursor: pointer;
         }
     }
@@ -74,6 +94,7 @@ main{
     position: relative;
     margin-top: -10%;
 }
+
 #en_tete{
     display: flex;
 }
@@ -84,6 +105,7 @@ main{
     h1{
         margin-left: 6%;
         font-size: 30px;
+        font-family: $shrikhand;
     }
 }
 
@@ -104,6 +126,15 @@ main{
 .menu_titre h2{
     margin-left: 6%;
     font-size: 17px;
+    margin-bottom: 1%;
+}
+
+.soulignement{
+    width: 13%;
+    height: 4px;
+    background-color: $couleur_tertiaire;
+    margin-left: 6%;
+    margin-bottom: 2%;    
 }
 
 .menu{
@@ -114,17 +145,93 @@ main{
 }
 
 .plat{
-    display: flex;
+    
     background-color: white;
     border-radius: 25px;
     width: 95%;  
     margin-bottom: 5%;  
     cursor: pointer;
+    overflow: hidden;
+    &:hover .plat_animation {
+        margin-right: 0px;
+        transition: 0.4s;
+    }
+    &:hover .plat_animation img{
+        transform: rotate(360deg);
+        transition: 0.5s;
+    }
+}
+
+#animation_plat1{
+    display: flex;
+    animation: plat_apparition 0.2s;
+    animation-timing-function: ease;
+    animation-duration: 0.2s;
+}
+
+#animation_plat2{
+    display: flex;
+    animation: plat_apparition 0.4s;
+    animation-timing-function: ease;
+    animation-duration: 0.2s;
+}
+#animation_plat3{
+    display: flex;
+    animation: plat_apparition 0.6s;
+    animation-timing-function: ease;
+    animation-duration: 0.2s;
+}
+#animation_plat4{
+    display: flex;
+    animation: plat_apparition 0.8s;
+    animation-timing-function: ease;
+    animation-duration: 0.2s;
+}
+#animation_plat5{
+    display: flex;
+    animation: plat_apparition 0.10s;
+    animation-timing-function: ease;
+    animation-duration: 0.2s;
+}
+#animation_plat6{
+    display: flex;
+    animation: plat_apparition 0.12s;
+    animation-timing-function: ease;
+    animation-duration: 0.2s;
+}
+#animation_plat7{
+    display: flex;
+    animation: plat_apparition 0.14s;
+    animation-timing-function: ease;
+    animation-duration: 0.2s;
+}
+#animation_plat8{
+    display: flex;
+    animation: plat_apparition 0.16s;
+    animation-timing-function: ease;
+    animation-duration: 0.2s;
+}
+#animation_plat9{
+    display: flex;
+    animation: plat_apparition 0.18s;
+    animation-timing-function: ease;
+    animation-duration: 0.2s;
+}
+@keyframes plat_apparition{
+    0%{
+        opacity: 0;
+        transform: translateY(25%); 
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 .plat_description{
     width: 85%;
     margin-left: 5%;
+    overflow: hidden;
     h3{
         margin-top: 5%;
         margin-bottom: 0px;
@@ -146,6 +253,24 @@ main{
     p{
         margin-bottom: 25%;
         font-size: 15px;
+    }
+}
+
+.plat_animation{
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #99E2D0;
+    border-radius: 0px 25px 25px 0px;
+    margin-right: -90px;
+    
+    img{
+        font-size: 25px;
+        color: white;
+        width: 25px;
+        height: 25px;
     }
 }
 
@@ -212,35 +337,67 @@ li img{
 @media all and (min-width: 1000px) {
 
 
-#bloc_page{
+#header{
     width: 70%;
     margin: auto;
 }
 
 #fleche{
-    width: 25%;
+    width: 15%;
+    align-items: center;
     img{
-        width: 15%;
+        width: 25%;
     }
 }
 
 #logo{
-    width: 75%;
-    img{
-        width: 45%;
+    justify-content: center;
+    #fleche{
+        width: 15%;
+        align-items: center;
+        img{
+            width: 25%;
+        }
+    }
+    #logo_img{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        display: flex;
+        width: 35%;
+        img{
+            width: 70%;
+            margin-left: 0%;
+        }
     }
 }
 
 #image_restaurant img{
     height: 500px;
+    border-radius: 45px 45px 0px 0px;
+}
+
+main{
+    margin: auto;
+    margin-top: -5%;
+    width: 70%;
 }
 
 #en_tete_texte h1{
     font-size: 60px;
 }
 
+#en_tete_icone img{
+    width: 50px;
+    height: 50px;
+}
+
 .menu_titre h2{
     font-size: 30px;
+}
+
+.soulignement{
+    width: 5%;
 }
 
 .menu{
@@ -251,7 +408,11 @@ li img{
 .plat{
     width: 28%;
     margin-left: 3%;
-    height: 125px;
+    height: 100px;
+}
+
+.plat_animation{
+    height: 100px;
 }
 
 .plat_description{
