@@ -41,11 +41,13 @@ body{
     margin: 0;
     h1{
         font-family: $roboto;
+        white-space: nowrap;
     }
     p{
         font-family: $roboto;
         white-space: nowrap;
     }
+    
 }
 
 #logo{
@@ -114,12 +116,13 @@ main{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 10%;
+    margin-right: 6%;
     margin-top: 4%;
     img{
         width: 25px;
         height: 25px;
         cursor: pointer;
+        
     }
 }
 
@@ -166,56 +169,56 @@ main{
     display: flex;
     animation: plat_apparition 0.2s;
     animation-timing-function: ease;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
 }
 
 #animation_plat2{
     display: flex;
     animation: plat_apparition 0.4s;
     animation-timing-function: ease;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
 }
 #animation_plat3{
     display: flex;
     animation: plat_apparition 0.6s;
     animation-timing-function: ease;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
 }
 #animation_plat4{
     display: flex;
     animation: plat_apparition 0.8s;
     animation-timing-function: ease;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
 }
 #animation_plat5{
     display: flex;
     animation: plat_apparition 0.10s;
     animation-timing-function: ease;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
 }
 #animation_plat6{
     display: flex;
     animation: plat_apparition 0.12s;
     animation-timing-function: ease;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
 }
 #animation_plat7{
     display: flex;
     animation: plat_apparition 0.14s;
     animation-timing-function: ease;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
 }
 #animation_plat8{
     display: flex;
     animation: plat_apparition 0.16s;
     animation-timing-function: ease;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
 }
 #animation_plat9{
     display: flex;
     animation: plat_apparition 0.18s;
     animation-timing-function: ease;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
 }
 @keyframes plat_apparition{
     0%{
@@ -293,6 +296,10 @@ main{
     font-size: 100%;
     margin-top: 5%;
     cursor: pointer;
+    &:hover{
+        filter: brightness(1.2);
+        box-shadow: 0px 12px 12px #8683834d;
+    }
     
 }
 
@@ -405,6 +412,10 @@ main{
 
 }
 
+#quatreplat{
+    width: 98%;
+}
+
 .plat{
     width: 28%;
     margin-left: 3%;
@@ -420,7 +431,7 @@ main{
     flex-direction: column;
     justify-content: center;
     h3{
-        font-size: 23px;
+        font-size: 20px;
     }
 }
 
@@ -455,3 +466,13 @@ main{
   }
 }
 
+
+
+
+@media all and (min-width: 600px) and (max-width: 1280px) { 
+
+.plat_animation{
+    margin-right: -160px;
+}
+
+}

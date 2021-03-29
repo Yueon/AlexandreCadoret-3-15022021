@@ -90,6 +90,10 @@ nav {
   margin-top: 5%;
   cursor: pointer;
 }
+#button:hover {
+  filter: brightness(1.2);
+  box-shadow: 0px 12px 12px #8683834d;
+}
 
 #fonctionnement h1 {
   margin-left: 5%;
