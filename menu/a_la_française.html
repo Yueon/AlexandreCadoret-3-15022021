@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A la Française</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8673ac2313.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -30,7 +31,10 @@
         <main>
             <div id="en_tete">
                 <div id="en_tete_texte"><h1>À la française</h1></div>
-                <div id="en_tete_icone"><img src="../images/logo/heart-regular.svg" alt="coeur"></div>
+                <div id="en_tete_icone">
+                    <i class="heart far fa-heart"></i>
+                    <div class="heart_animation"></div>
+                </div>
 
             </div>
 
@@ -40,9 +44,9 @@
 
                 <div class="menu">
 
-                    <div class="plat">
+                    <div class="plat" id="animation_plat1">
 
-                        <div id="animation_plat1">
+                        <div class="animation_flex">
 
                             <div class="plat_description">
                                 <h3>Tartare de poulpe acidulé</h3>
@@ -61,9 +65,9 @@
 
                     </div>
 
-                    <div class="plat">
+                    <div class="plat" id="animation_plat2">
 
-                        <div id="animation_plat2">
+                        <div class="animation_flex">
 
                             <div class="plat_description">
                                 <h3>Velouté de légumes d'antan</h3>
@@ -82,9 +86,9 @@
 
                     </div>
 
-                    <div class="plat">
+                    <div class="plat" id="animation_plat3">
 
-                        <div id="animation_plat3">
+                        <div class="animation_flex">
 
                             <div class="plat_description">
                                 <h3>Soupe à l'oignon</h3>
@@ -110,9 +114,9 @@
 
                 <div class="menu">
 
-                    <div class="plat">
+                    <div class="plat" id="animation_plat4">
 
-                        <div id="animation_plat4">
+                        <div class="animation_flex">
 
                             <div class="plat_description">
                                 <h3>Coquilles Saint-Jacques</h3>
@@ -131,9 +135,9 @@
 
                     </div>
 
-                    <div class="plat">
+                    <div class="plat" id="animation_plat5">
 
-                        <div id="animation_plat5">
+                        <div class="animation_flex">
 
                             <div class="plat_description">
                                 <h3>Magret de cannard</h3>
@@ -152,9 +156,9 @@
 
                     </div>
 
-                    <div class="plat">
+                    <div class="plat" id="animation_plat6">
 
-                        <div id="animation_plat6">
+                        <div class="animation_flex">
 
                             <div class="plat_description">
                                 <h3>Pigeonneau d'Ille-et-Vilaine</h3>
@@ -180,9 +184,9 @@
 
                 <div class="menu">
 
-                    <div class="plat">
+                    <div class="plat" id="animation_plat7">
 
-                        <div id="animation_plat7">
+                        <div class="animation_flex">
 
                             <div class="plat_description">
                                 <h3>Pétales de violettes glacés</h3>
@@ -201,9 +205,9 @@
 
                     </div>
 
-                    <div class="plat">
+                    <div class="plat" id="animation_plat8">
 
-                        <div id="animation_plat8">
+                        <div class="animation_flex">
 
                             <div class="plat_description">
                                 <h3>Fondant au chocolat</h3>
@@ -222,9 +226,9 @@
 
                     </div>
 
-                    <div class="plat">
+                    <div class="plat" id="animation_plat9">
 
-                        <div id="animation_plat9">
+                        <div class="animation_flex">
 
                             <div class="plat_description">
                                 <h3>Millefeuille croustillant</h3>
@@ -251,32 +255,33 @@
         </main>
 
     <!--footer-->
-    <footer>
-        <div id="footer">
-            <img id="logo_footer" src="../images/logo/ohmyfood@2x.svg" alt="">
-            <ul id="contact">
+        <footer>
+            <div id="footer">
+                <img id="logo_footer" src="../images/logo/ohmyfood@2x.svg" alt="">
+                <ul id="contact">
 
-                <li class="puce">
-                    <img class="puce_img" src="../images/logo/utensils-solid.svg" alt="">
-                    <p>Proposer un restaurant</p>
-                </li>
+                    <li class="puce">
+                        <img class="puce_img" src="../images/logo/utensils-solid.svg" alt="">
+                        <p>Proposer un restaurant</p>
+                    </li>
 
-                <li class="puce">
-                    <img class="puce_img" src="../images/logo/hands-helping-solid.svg" alt="">
-                    <p>Devenir partenaire</p>
-                </li>
+                    <li class="puce">
+                        <img class="puce_img" src="../images/logo/hands-helping-solid.svg" alt="">
+                        <p>Devenir partenaire</p>
+                    </li>
 
-                <li class="puce">
-                    <p>Mentions légales</p>
-                </li>
+                    <li class="puce">
+                        <p>Mentions légales</p>
+                    </li>
 
-                <li class="puce">
-                    <p>Contact</p>
-                </li>
+                    <li class="puce">
+                        <p>Contact</p>
+                    </li>
 
-            </ul>
+                </ul>
 
-        </div>
+            </div>
 
-    </footer>
+        </footer>
+    </div>
 </body>
