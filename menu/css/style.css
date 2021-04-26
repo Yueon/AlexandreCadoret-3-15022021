@@ -237,6 +237,13 @@ main {
   animation-fill-mode: both;
 }
 
+#animation_plat10 {
+  animation: plat_apparition 1s;
+  animation-timing-function: ease;
+  animation-delay: 5s;
+  animation-fill-mode: both;
+}
+
 @keyframes plat_apparition {
   0% {
     opacity: 0;
