@@ -36,14 +36,6 @@
     z-index: -1;
   }
 }
-@keyframes heart_anim {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 body {
   margin: 0;
 }
@@ -114,7 +106,7 @@ body a {
 
 #location {
   display: flex;
-  background-color: #bdb9b9;
+  background-color: #bdb9b994;
   margin-top: 2%;
   justify-content: center;
   box-shadow: inset 0px 1px 5px 0px gray;
@@ -161,15 +153,16 @@ nav {
   width: 70%;
   height: 50px;
   border-radius: 25px;
-  box-shadow: 0px 2px 10px 0px gray;
+  box-shadow: 0px 2px 10px 0px #7e7d7db0;
   border: 2px;
   font-size: 100%;
   margin-top: 5%;
   cursor: pointer;
+  transition: all 0.5s;
 }
 #button:hover {
   filter: brightness(1.2);
-  box-shadow: 0px 12px 12px #8683834d;
+  box-shadow: 0px 12px 12px #3534344d;
 }
 
 #fonctionnement h1 {
@@ -293,14 +286,11 @@ nav {
   right: 5%;
   bottom: 10%;
 }
-.restaurant_icone:hover .heart_animation:nth-child(1):hover {
-  opacity: 1;
+.restaurant_icone:hover .heart {
+  opacity: 0;
 }
 .restaurant_icone .heart {
   font-size: 25px;
-}
-.restaurant_icone .heart:hover {
-  opacity: 0;
 }
 
 .heart_animation {
@@ -308,8 +298,6 @@ nav {
   width: 13px;
   height: 13px;
   transform: rotate(45deg);
-  background-color: red;
-  opacity: 0;
   top: -18px;
   right: 0;
   bottom: 0;
@@ -325,8 +313,6 @@ nav {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: red;
-  opacity: 0;
 }
 .heart_animation::after {
   position: absolute;
@@ -338,19 +324,32 @@ nav {
   border-radius: 50%;
   bottom: 0;
   left: -7px;
-  background-color: red;
-  opacity: 0;
+}
+
+.restaurant_icone:hover .heart_animation,
+.restaurant_icone:hover .heart_animation::after,
+.restaurant_icone:hover .heart_animation::before {
+  animation: heart_anim 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes heart_anim {
+  100% {
+    opacity: 1;
+    background-color: #dc5668;
+  }
+}
+footer {
+  background-color: #000000d6;
+  color: white;
 }
 
 #footer {
-  background-color: #000000d6;
-  color: white;
-  height: 235px;
+  padding: 25px 0px 25px 0px;
 }
 #footer #logo_footer {
   width: 150px;
   margin-left: 5%;
-  margin-top: 5%;
 }
 
 #contact {
@@ -442,10 +441,6 @@ li img {
   .restaurant_rangee a {
     width: 30%;
     margin-left: 4%;
-  }
-
-  #footer {
-    height: 380px;
   }
 
   #footer #logo_footer {
