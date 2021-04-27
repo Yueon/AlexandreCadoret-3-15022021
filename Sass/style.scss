@@ -76,8 +76,8 @@ body{
     background-color: rgba(0, 0, 0, 0.3);
     animation: loader_fin cubic-bezier(.6,.04,.98,.34);
     animation-duration: 2.5s;
-    animation-delay: 0.8s;
     animation-fill-mode: both;
+    animation-delay: 0.8s;
     z-index: 1;
     position: fixed;
     width: 100%;
@@ -94,7 +94,7 @@ body{
     z-index: 1;
     animation: loader_fin cubic-bezier(.6,.04,.98,.34);
     animation-duration: 2.5s;
-    animation-delay: 0.8s;
+    animation-delay: 5s;
     animation-fill-mode: both;
   }
   .loader div {
@@ -107,7 +107,21 @@ body{
   .loader div:nth-child(2) {
     animation-delay: -0.5s;
   }
+header, nav, main, section, footer{
+    animation: page_apparition 1s;
+    animation-timing-function: ease;
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+}
 
+@keyframes page_apparition{
+    0%{
+        opacity: 0; 
+    }
+    100%{
+        opacity: 1;
+    }
+}
 #logo {
     display: flex;
     justify-content: center;
